@@ -30,8 +30,12 @@ def desconto(primeira_compra, valor):
         else:
             desconto = (valor * 10) / 100
 
+        vf1 = valor - desconto
         if primeira_compra == "True":
-            total_desconto = desconto + 25
+            if vf1 >= 50:
+                total_desconto = desconto + 25
+            else:
+                total_desconto = desconto
         else:
             total_desconto = desconto
 
