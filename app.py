@@ -32,7 +32,7 @@ def desconto(primeira_compra, valor):
 
         vf1 = valor - desconto
         if primeira_compra == "True":
-            if vf1 >= 50:
+            if vf1 > 50:
                 total_desconto = desconto + 25
             else:
                 total_desconto = desconto
